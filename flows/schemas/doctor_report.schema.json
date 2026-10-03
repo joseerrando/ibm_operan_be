@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Flow 4 doctor_report output",
+  "type": "object",
+  "required": [
+    "overview",
+    "medication_adherence",
+    "key_observations",
+    "symptoms",
+    "questions_for_doctor"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "overview": {
+      "type": "string",
+      "minLength": 1
+    },
+    "medication_adherence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "given",
+          "missed"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "given": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "missed": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "key_observations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "symptoms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "questions_for_doctor": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

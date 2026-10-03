@@ -1,0 +1,12 @@
+# Simpan semua teks dengan LF di repo, apa pun OS-nya.
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+
+*.png binary
+*.jpg binary
+*.ttf binary
+*.otf binary
+*.jar binary
+*.pdf binary
+*.wav binary

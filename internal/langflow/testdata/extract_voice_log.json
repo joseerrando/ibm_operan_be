@@ -1,0 +1,9 @@
+{
+  "logs": [
+    { "log_type": "suhu", "value": { "celsius": 38.5 }, "recorded_at": "2026-10-02T09:15:00+07:00" }
+  ],
+  "doses": [
+    { "medication_id": "8c1f2a0e-0000-4000-8000-000000000001", "given_at": "2026-10-02T09:00:00+07:00" }
+  ],
+  "unmatched_text": ""
+}

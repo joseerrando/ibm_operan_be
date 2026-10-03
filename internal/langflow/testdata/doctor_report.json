@@ -1,0 +1,13 @@
+{
+  "overview": "Suhu 38° atau lebih tercatat di 3 hari, tertinggi 39,1° pada 30/9 pukul 21.00. Obat dan vitamin diberikan 11 kali, 1 jadwal terlewat.",
+  "medication_adherence": [
+    { "name": "Paracetamol sirup", "given": 7, "missed": 0 },
+    { "name": "Vitamin D", "given": 4, "missed": 1 }
+  ],
+  "key_observations": ["Suhu tertinggi 39,1° (30/9 21.00)", "Makan sedikit atau menolak makan 2 kali"],
+  "symptoms": ["batuk", "rewel"],
+  "questions_for_doctor": [
+    "Tanda apa saja yang membuat kami perlu segera kembali periksa?",
+    "Berapa lama lagi suhu perlu dipantau di rumah?"
+  ]
+}

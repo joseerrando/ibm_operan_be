@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Flow 1 extract_voice_log output",
+  "type": "object",
+  "required": [
+    "logs",
+    "doses",
+    "unmatched_text"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "logs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "log_type",
+          "value"
+        ],
+        "properties": {
+          "log_type": {
+            "enum": [
+              "suhu",
+              "tensi",
+              "gula_darah",
+              "makan",
+              "tidur",
+              "bab_bak",
+              "keluhan",
+              "catatan"
+            ]
+          },
+          "value": {
+            "type": "object",
+            "description": "suhu{celsius 34-43} tensi{systolic 60-260, diastolic 30-160} gula_darah{mg_dl 20-600, context} makan{portion} tidur{quality, hours} keluhan/catatan{text} bab_bak{note}"
+          },
+          "recorded_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    "doses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "medication_id",
+          "given_at"
+        ],
+        "properties": {
+          "medication_id": {
+            "type": "string"
+          },
+          "given_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    "unmatched_text": {
+      "type": "string"
+    }
+  }
+}

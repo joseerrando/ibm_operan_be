@@ -1,0 +1,40 @@
+# Rahasia dan konfigurasi lokal
+.env
+.env.*
+!.env.example
+firebase-service-account.json
+*.key
+*.pem
+
+# Hasil build dan file sementara
+/bin/
+/tmp/
+*.exe
+*.test
+*.out
+coverage.*
+*.log
+
+# Dokumen submission (dibagikan lewat form, bukan lewat repo)
+*.pdf
+
+# Python (flows/build_flows.py)
+__pycache__/
+*.pyc
+.venv/
+
+# Langflow lokal
+.langflow/
+
+# Editor dan OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Docker (belum dipakai untuk submission, disimpan lokal saja)
+Dockerfile
+docker-compose.yml
+.dockerignore
+

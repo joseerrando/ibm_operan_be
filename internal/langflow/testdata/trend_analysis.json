@@ -1,0 +1,9 @@
+{
+  "alerts": [
+    {
+      "severity": "info",
+      "title": "Keluhan batuk tercatat 3 hari",
+      "message": "Keluhan batuk pada Adik tercatat di 3 hari berbeda minggu ini. Sampaikan ke dokter saat kontrol, atau hubungi tenaga kesehatan bila memberat."
+    }
+  ]
+}
