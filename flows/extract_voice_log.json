@@ -1205,8 +1205,13 @@
     ],
     "edges": [
       {
+        "id": "reactflow__edge-ChatInput-op1{œdataTypeœ:œChatInputœ,œidœ:œChatInput-op1œ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-Prompt-op1{œfieldNameœ:œpayloadœ,œidœ:œPrompt-op1œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
         "source": "ChatInput-op1",
         "target": "Prompt-op1",
+        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-op1œ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
+        "targetHandle": "{œfieldNameœ:œpayloadœ,œidœ:œPrompt-op1œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "animated": false,
+        "className": "",
         "data": {
           "sourceHandle": {
             "dataType": "ChatInput",
@@ -1227,8 +1232,13 @@
         }
       },
       {
+        "id": "reactflow__edge-Prompt-op1{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt-op1œ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-Gemini-op1{œfieldNameœ:œinput_valueœ,œidœ:œGemini-op1œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
         "source": "Prompt-op1",
         "target": "Gemini-op1",
+        "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt-op1œ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œGemini-op1œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "animated": false,
+        "className": "",
         "data": {
           "sourceHandle": {
             "dataType": "Prompt Template",
@@ -1249,8 +1259,13 @@
         }
       },
       {
+        "id": "reactflow__edge-Gemini-op1{œdataTypeœ:œext:google:GoogleGenerativeAIComponent@officialœ,œidœ:œGemini-op1œ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-op1{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-op1œ,œinputTypesœ:[œDataœ,œJSONœ,œDataFrameœ,œTableœ,œMessageœ],œtypeœ:œotherœ}",
         "source": "Gemini-op1",
         "target": "ChatOutput-op1",
+        "sourceHandle": "{œdataTypeœ:œext:google:GoogleGenerativeAIComponent@officialœ,œidœ:œGemini-op1œ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-op1œ,œinputTypesœ:[œDataœ,œJSONœ,œDataFrameœ,œTableœ,œMessageœ],œtypeœ:œotherœ}",
+        "animated": false,
+        "className": "",
         "data": {
           "sourceHandle": {
             "dataType": "ext:google:GoogleGenerativeAIComponent@official",

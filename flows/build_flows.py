@@ -98,14 +98,25 @@ def node(node_id: str, key: str, x: int, y: int, tpl: dict | None = None) -> dic
 def edge(src: dict, out_name: str, dst: dict, field: str) -> dict:
     out = next(o for o in src["data"]["node"]["outputs"] if o["name"] == out_name)
     tf = dst["data"]["node"]["template"][field]
+    source_handle = {"dataType": src["data"]["type"], "id": src["id"], "name": out_name, "output_types": out.get("types", [])}
+    target_handle = {"fieldName": field, "id": dst["id"], "inputTypes": tf.get("input_types") or [], "type": tf.get("type", "str")}
+    # Langflow UI (React Flow) needs a unique edge id and the handles as "œ"-escaped JSON strings,
+    # otherwise edges sharing an empty id collapse into one drawn line.
+    sh, th = _handle_str(source_handle), _handle_str(target_handle)
     return {
+        "id": f"reactflow__edge-{src['id']}{sh}-{dst['id']}{th}",
         "source": src["id"],
         "target": dst["id"],
-        "data": {
-            "sourceHandle": {"dataType": src["data"]["type"], "id": src["id"], "name": out_name, "output_types": out.get("types", [])},
-            "targetHandle": {"fieldName": field, "id": dst["id"], "inputTypes": tf.get("input_types") or [], "type": tf.get("type", "str")},
-        },
+        "sourceHandle": sh,
+        "targetHandle": th,
+        "animated": False,
+        "className": "",
+        "data": {"sourceHandle": source_handle, "targetHandle": target_handle},
     }
+
+
+def _handle_str(handle: dict) -> str:
+    return json.dumps(handle, separators=(",", ":"), ensure_ascii=False).replace('"', "œ")
 
 
 def prompt_text(md_file: str) -> str:

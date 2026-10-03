@@ -2111,8 +2111,13 @@
     ],
     "edges": [
       {
+        "id": "reactflow__edge-ChatInput-op5{œdataTypeœ:œChatInputœ,œidœ:œChatInput-op5œ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-Agent-op5{œfieldNameœ:œinput_valueœ,œidœ:œAgent-op5œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
         "source": "ChatInput-op5",
         "target": "Agent-op5",
+        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-op5œ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œAgent-op5œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "animated": false,
+        "className": "",
         "data": {
           "sourceHandle": {
             "dataType": "ChatInput",
@@ -2133,8 +2138,13 @@
         }
       },
       {
+        "id": "reactflow__edge-Gemini-op5{œdataTypeœ:œext:google:GoogleGenerativeAIComponent@officialœ,œidœ:œGemini-op5œ,œnameœ:œmodel_outputœ,œoutput_typesœ:[œLanguageModelœ]}-Agent-op5{œfieldNameœ:œmodelœ,œidœ:œAgent-op5œ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œmodelœ}",
         "source": "Gemini-op5",
         "target": "Agent-op5",
+        "sourceHandle": "{œdataTypeœ:œext:google:GoogleGenerativeAIComponent@officialœ,œidœ:œGemini-op5œ,œnameœ:œmodel_outputœ,œoutput_typesœ:[œLanguageModelœ]}",
+        "targetHandle": "{œfieldNameœ:œmodelœ,œidœ:œAgent-op5œ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œmodelœ}",
+        "animated": false,
+        "className": "",
         "data": {
           "sourceHandle": {
             "dataType": "ext:google:GoogleGenerativeAIComponent@official",
@@ -2155,8 +2165,13 @@
         }
       },
       {
+        "id": "reactflow__edge-APIRequest-op5{œdataTypeœ:œAPIRequestœ,œidœ:œAPIRequest-op5œ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}-Agent-op5{œfieldNameœ:œtoolsœ,œidœ:œAgent-op5œ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
         "source": "APIRequest-op5",
         "target": "Agent-op5",
+        "sourceHandle": "{œdataTypeœ:œAPIRequestœ,œidœ:œAPIRequest-op5œ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
+        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œAgent-op5œ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
+        "animated": false,
+        "className": "",
         "data": {
           "sourceHandle": {
             "dataType": "APIRequest",
@@ -2177,8 +2192,13 @@
         }
       },
       {
+        "id": "reactflow__edge-Agent-op5{œdataTypeœ:œAgentœ,œidœ:œAgent-op5œ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-op5{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-op5œ,œinputTypesœ:[œDataœ,œJSONœ,œDataFrameœ,œTableœ,œMessageœ],œtypeœ:œotherœ}",
         "source": "Agent-op5",
         "target": "ChatOutput-op5",
+        "sourceHandle": "{œdataTypeœ:œAgentœ,œidœ:œAgent-op5œ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-op5œ,œinputTypesœ:[œDataœ,œJSONœ,œDataFrameœ,œTableœ,œMessageœ],œtypeœ:œotherœ}",
+        "animated": false,
+        "className": "",
         "data": {
           "sourceHandle": {
             "dataType": "Agent",
