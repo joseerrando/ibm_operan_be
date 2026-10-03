@@ -1,6 +1,6 @@
 # Operan — Backend
 
-|Dokumen MD ini hasil dari buatan AI untuk membantu summary dan visualisasi
+Dokumen MD ini hasil dari buatan AI untuk membantu summary dan visualisasi
 
 Backend untuk **Operan**, aplikasi koordinasi perawatan keluarga (National Hackathon, tema Healthcare & Wellbeing).
 Repo ini berisi REST API Go, skema database, aturan keamanan obat, integrasi IBM Langflow (5 flow AI),
