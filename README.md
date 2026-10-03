@@ -1,5 +1,7 @@
 # Operan — Backend
 
+Dokumen MD ini hasil dari buatan AI untuk membantu summary dan visualisasi
+
 Backend untuk **Operan**, aplikasi koordinasi perawatan keluarga (National Hackathon, tema Healthcare & Wellbeing).
 Repo ini berisi REST API Go, skema database, aturan keamanan obat, integrasi IBM Langflow (5 flow AI),
 dan speech-to-text. Aplikasi Android/Web ada di repo terpisah **`IBM-Hackaton_fe`**.
@@ -17,6 +19,7 @@ mendiagnosis dan tanpa menentukan dosis.
 | Realtime | Server-Sent Events per keluarga |
 | AI | IBM Langflow (5 flow), model Google Gemini |
 | Speech-to-text | Gemini (Google AI Studio) atau endpoint OpenAI-compatible |
+
 
 ## Arsitektur
 
